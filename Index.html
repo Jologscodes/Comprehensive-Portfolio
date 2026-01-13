@@ -1,185 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Joel Rodriguez | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        body {
-            background-color: #1c1c1c;
-            color: #ffffff;
-        }
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
 
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 60px;
-            background-color: #2a2a2a;
-        }
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-        header h1 {
-            font-size: 18px;
-            font-weight: 500;
-        }
+header h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
 
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 30px;
-            font-size: 14px;
-        }
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+}
 
-        nav a:hover {
-            opacity: 0.7;
-        }
+nav a:hover {
+    opacity: 0.7;
+}
 
-        
-        .hero {
-            display: flex;
-            height: calc(100vh - 80px);
-        }
+/* HERO */
+.hero {
+    display: flex;
+    height: calc(100vh - 80px);
+}
 
-        .hero-image {
-            width: 50%;
-            background-image: url("Picture\ Joel.jpg"); 
-            background-size: cover;
-            background-position: center;
-        }
+.hero-image {
+    width: 50%;
+    background-image: url("Picture Joel.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
-        .hero-content {
-            width: 50%;
-            padding: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+.hero-content {
+    width: 50%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-        .hero-content h2 {
-            font-size: 64px;
-            font-weight: 700;
-            line-height: 1.1;
-        }
+.hero-content h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+}
 
-        .hero-content hr {
-            width: 120px;
-            border: 1px solid #ffffff;
-            margin: 30px 0;
-        }
+.hero-content hr {
+    width: 120px;
+    border: 1px solid #ffffff;
+    margin: 30px 0;
+}
 
-        .hero-content p {
-            font-size: 14px;
-            color: #cccccc;
-            max-width: 400px;
-            margin-bottom: 40px;
-        }
+.hero-content p {
+    font-size: 14px;
+    color: #cccccc;
+    max-width: 400px;
+}
 
-        .buttons {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+/* SECTIONS */
+section {
+    padding: 80px;
+}
 
-        .btn {
-            padding: 12px 24px;
-            border: none;
-            font-size: 14px;
-            cursor: pointer;
-        }
+section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
 
-        .btn-primary {
-            background-color: #ffffff;
-            color: #000000;
-        }
+section p {
+    max-width: 700px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
 
-        .btn-secondary {
-            background: none;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+/* CONTACT */
+.contact-box p {
+    margin-bottom: 10px;
+}
 
-        .btn-secondary span {
-            font-size: 18px;
-        }
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: #aaaaaa;
+}
 
-        
-        .page-number {
-            position: absolute;
-            bottom: 20px;
-            right: 40px;
-            font-size: 12px;
-            color: #aaaaaa;
-        }
-
-        
-        @media (max-width: 900px) {
-            .hero {
-                flex-direction: column;
-            }
-
-            .hero-image,
-            .hero-content {
-                width: 100%;
-                height: 50vh;
-            }
-
-            .hero-content {
-                padding: 40px;
-            }
-
-            .hero-content h2 {
-                font-size: 42px;
-            }
-        }
-    </style>
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-image,
+    .hero-content {
+        width: 100%;
+        height: 50vh;
+    }
+    .hero-content {
+        padding: 40px;
+    }
+    .hero-content h2 {
+        font-size: 42px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    
-    <header>
-        <h1>Joel Nedroda Rodriguez Jr</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header>
+    <h1>Joel Nedroda Rodriguez Jr</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    
-    <section class="hero">
-        <div class="hero-image"></div>
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-image"></div>
+    <div class="hero-content">
+        <h2>My<br>Portfolio</h2>
+        <hr>
+        <p>
+            Hello, welcome to my online portfolio.
+            My real name is Joel Nedroda Rodriguez Jr,
+            you can call me <strong>Kuya Jologs</strong>.
+        </p>
+    </div>
+</section>
 
-        <div class="hero-content">
-            <h2>My<br>Portfolio</h2>
-            <hr>
-            <p>
-                "Hello, and welcome to my online portfolio." My real name is Joel Nedroda Rodriguez Jr but "You can call me Kuya Jologs"
-            </p>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an IT student passionate about web development,
+        system design, and creative projects.
+    </p>
 
-            <div class="buttons">
-                <button class="btn btn-primary">--Welcome--</button>
-                <button class="btn btn-secondary">
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </section>
+    <h2>Skills</h2>
+    <p>
+        Written & verbal communication, research,
+        critical thinking, teamwork, presenter & documenter.
+    </p>
 
-    <div class="page-number">Page | 01</div>
+    <h2>Experience</h2>
+    <p>
+        Academic projects, presenter, coursework practicals,
+        and collaborative works.
+    </p>
+
+    <h2>Goals</h2>
+    <p>
+        To grow professionally, help my family,
+        and honor God in everything I do.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+        <p>📧 Email: dhemarodriguez53@gmail.com</p>
+        <p>📧 School Email: 20221248@nbsc.edu.ph</p>
+        <p>📱 Phone: +63 912 121 7450</p>
+        <p>📘 Facebook: Joel Nedroda Rodriguez Jr</p>
+    </div>
+</section>
+
+<footer>
+    <p>© <span id="year"></span> Joel Rodriguez</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            document.querySelector(link.getAttribute("href"))
+                .scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+</script>
 
 </body>
 </html>
