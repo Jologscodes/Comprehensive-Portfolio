@@ -1,0 +1,77 @@
+/* Base page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for readability */
+}
+
+/* Card-style layout */
+header,
+section {
+    background: #f0f8ff; /* Light blue background for sections */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 128, 0.1); /* subtle blue shadow */
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #0074D9; /* Deep blue header */
+    color: #ffffff; /* White text */
+}
+
+/* Profile image */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ffffff; /* White border for contrast */
+}
+
+/* Headings */
+h1 {
+    color: #ffffff; /* White text in header */
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #0074D9; /* Blue headings in sections */
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #0074D9; /* Blue footer text */
+}
+
+/* Section hover effect for subtle interaction */
+section:hover {
+    background-color: #e6f0ff; /* Slightly lighter blue on hover */
+}
+
+/* Print-friendly (optional) */
+@media print {
+    body {
+        background-color: #ffffff;
+        margin: 20px;
+    }
+
+    header,
+    section {
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
