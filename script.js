@@ -1,4 +1,4 @@
-        // Smooth scrolling for internal links (if added later)
+        
 document.addEventListener("DOMContentLoaded", () => {
 
     const links = document.querySelectorAll('a[href^="#"]');
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Auto-update year in footer
+    
     const footer = document.querySelector("footer p");
     if (footer) {
         const year = new Date().getFullYear();
